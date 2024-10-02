@@ -100,7 +100,6 @@ class MorseBinaryTree {
         var nextPrefix = prefix + (direction == NodeDirection.Left ? "│   " : "    ");
         printNodeRecursively(node.left, nextPrefix, NodeDirection.Left);
         printNodeRecursively(node.right, nextPrefix, NodeDirection.Right);
-
     }
 
     private static IllegalArgumentException invalidMorseCharacter(char c, String morse) {
